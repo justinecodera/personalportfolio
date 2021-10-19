@@ -10,7 +10,10 @@
 				header.classList.toggle("sticky", window.scrollY > 50);
 
 				var column = document.querySelector(".hero-section");
-				column.classList.toggle("scrollup", window.scrollY > 200)
+				column.classList.toggle("scrollup", window.scrollY > 200);
+
+				var shown = document.querySelector(".container-2");
+				shown.classList.toggle("shown", window.scrollY > 500);
 			})
 		</script>
 </head>
@@ -18,13 +21,13 @@
 
 	<header>
 		
-		<a href="#" class="projects buttons" title="This is not linked">Projects</a>
+		<a href="#" class="about-me buttons" title="This is not linked">About Me</a>
 		<a href="#" class="logo buttons" title="This is not linked"><img src="img/logo.png"></a>
-		<a href="#" class="socials buttons" title="This is not linked">Socials</a>
+		<a href="#" class="projects buttons" title="This is not linked">Projects</a>
 
 	</header>
 
-	<div class="container">
+	<div class="container-1">
 		<div class="hero-section">
 			<div class="hero-text column">
 				
@@ -45,5 +48,29 @@
 		</div>
 	</div>
 
+	<div class="container-2 shown">
+		<div class="my-story">
+			<div class="my-story--content">
+				<h1>My Story</h1>
+				<p>a Student, a designer, a Programmer I am currently studying as an IT student in RTU
+				I started my journey being a designer as a freelance service where I design portfolio
+				templates for other people to use
+				<br><br>
+				Then I became curious how websites were designed, so I spent all my free time
+				studying how to make websites, I still dont have that much knowledge about web designing
+				but I will  be doing my best
+				<br><br>
+				I love what I do <3</p>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<p>@2021 no copyright reserved</p>
+		<p>I share my Ideas and insights
+		take it all as much as you want</p>
+		<p>we live in a free world</p>	
+	</footer>
 </body>
 </html>
